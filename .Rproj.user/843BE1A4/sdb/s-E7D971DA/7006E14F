@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1488406152048.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7006E14F",
+    "lastKnownWriteTime" : 6,
+    "last_content_update" : 1488406152048,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "BAB2A6EA",
+        "caption" : "CityRevenueLA",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=CityRevenueLA&cache_key=BAB2A6EA",
+        "displayedObservations" : 88,
+        "environment" : "",
+        "object" : "CityRevenueLA",
+        "preview" : 0,
+        "totalObservations" : 88,
+        "variables" : 15
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

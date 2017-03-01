@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1488406062688.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2B062197",
+    "lastKnownWriteTime" : 4300834560,
+    "last_content_update" : 1488406062688,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7FBDF890",
+        "caption" : "MergedDat2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=MergedDat2&cache_key=7FBDF890",
+        "displayedObservations" : 88000,
+        "environment" : "",
+        "object" : "MergedDat2",
+        "preview" : 0,
+        "totalObservations" : 88000,
+        "variables" : 158
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
