@@ -38,14 +38,34 @@ MergedDat=merge(ROIDat,CensusDat) #Warning: column names ‘rflag_ecppl1’, ‘
 #Old issue: levels(ROIDat$rflag_ecppl2) #NULL levels. All the values are zero.
 #These above issues were corrected by changing the csv file and re-running the code. 
 
+MergedDat2=merge(ROIDat,CensusDat, by=="tract") #Error Error in by == "tract" : comparison (1) is possible only for atomic and list types. Possible question for Deb. 
+
 #Observe the merged dataset. Notice there are 1,000 observations according to the CensusDat tract. 
 
-#Merge with Palm_ROI_cityrevenue dataset. First, subset this dataset for only Los Angeles. 
-head(CityRevenue)
-colnames(CityRevenue)=c("CityName","cntyname","TotalRevenue","LocalRevenue","pLocalRevenue","TotalRevPerCap","TotalPop","TotalPopMOE") #Change the name of the second row header. 
-CityRevenueLA = subset (CityRevenue, cntyname=="Los Angeles") #Subset for only Los Angeles. 
+##To Do: Edit the Excel document/CSV files before importing them. Convert all to numeric then hand select to keep some as factor.  
+as.numeric(factor(ROIDat))
 
-#Add CityRevenue to the MergedData set. 
-MergedDat2=merge(CityRevenueLA,MergedDat, by="cntyname")
-#this issue is that cntyname is Factor in CityRevenue and cntyname is numeric in MergedDat.
-#It multiplied 88 obs from CityRevenueLA by MergedDat 1,000 observations. Correct? 
+ROIDat = read.csv("Palm-ROI_12.15.14.csv", sep=",", header=TRUE, stringsAsFactors=FALSE) #Nope. This changes all to character. 
+
+
+#To Do
+#1) Subset ROI only for Los Angeles. 
+#2) Match places to mergedDat
+
+#COMPARISON
+#Remove the rows for missing data. HCIDLA and ACS=0. 
+#Look at regions for which ACS=0 and HCIDLA has a value. Are these regions where: There is no internet access (moppl3), there are fewer English speakers (soppl3), there are lower education rates (combine the education opportunity data), lower economic opportunity
+#Look at regions for which ACS has a value and HCIDLA=0. 
+
+#ACS ONLY: COMPARE THE PLACE DOMAINS TO THE PEOPLE DOMAINS # HOUSING OPPORTUNITY PLACE DOMAIN: Does housing affordability spatially correspond with education levels? With health levels? Do the same for housing adequcy?
+#Do these 
+
+#Do we have information on rental prices?
+
+
+
+#Beginning exploratory
+summary(MergedDat$ACS_MFRENTALS)
+summary(MergedDat$HCIDLA)
+summary(MergedDat$LUPAMS)
+

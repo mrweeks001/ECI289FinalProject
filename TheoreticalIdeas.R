@@ -39,6 +39,10 @@ Palm-LosAngelesRentalCensus.csv
 #  1) Analyze the data by region/district to assess housing characteristics and detect patterns. 
 # 2) Analyze the data in relation to the census data: e.g. compare to national averages.
 # 3) Map the geolocated data to analyze spatial patterns within and between districts. 
+
+#Analyses to run
+#  Rent proportion of income: Ratio of median rent to median monthly household income. 
+
 # PRESENT FINDINGS
 # ggplot, graphing
 # Make conclusions about the original challenge/research question. 
@@ -47,7 +51,6 @@ Palm-LosAngelesRentalCensus.csv
 #Ways to match up the data:
 ROI_12.15.14: County name
 City Revenue: County name
-
 
 #questions about the data
 1) What is the difference between ROI_12.15.14 and ROI_old. Should we bother to look at the old one?
